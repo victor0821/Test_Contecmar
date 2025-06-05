@@ -1,6 +1,6 @@
 # Test_Contecmar
 
-Aplicación web para el registro y visualización de piezas en proyectos de construcción.
+Aplicación web para el registro y visualización de piezas en proyectos de construcción, el ejercicio tiene probblemas de credenciales.
 
 ## Requisitos
 
@@ -14,7 +14,9 @@ Aplicación web para el registro y visualización de piezas en proyectos de cons
 
 1. Clonar el repositorio
 2. Instalar dependencias:
-   ```npm install @inertiajs/vue3 vue
+   ```Bash
+   npm install @inertiajs/vue3 vue
    npm install --save-dev vite laravel-vite-plugin
    npm install @vitejs/plugin-vue
-   
+   npm install vue@next @vitejs/plugin-vue
+   npm install
