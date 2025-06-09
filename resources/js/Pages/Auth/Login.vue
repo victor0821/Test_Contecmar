@@ -23,11 +23,11 @@ const form = useForm({
 });
 
 const submit = () => {
-    /*form.post('/login', {
+    form.post('/login', {
         onFinish: () => form.reset('password'),
-    });*/
+    });
 
-    form.transform(data => ({
+    /*form.transform(data => ({
         ...data,
         remember: form.remember ? 'on' : ''
     })).post('/login', {
@@ -36,7 +36,7 @@ const submit = () => {
             // Esto fuerza recarga completa si es necesario
             window.location.href = route('formulario');
         }
-    });
+    });*/
 };
 </script>
 
@@ -64,7 +64,7 @@ const submit = () => {
                     autocomplete="username"
                 />
 
-                <InputError class="mt-2" :message="form.errors.email" />
+                <InputError class="mt-2" :message="form.errors.name" />
             </div>
 
             <div class="mt-4">

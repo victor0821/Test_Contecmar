@@ -26,7 +26,7 @@ Route::get('/', function () {
 
 
 
-Route::post('/login', [AuthenticatedController::class, 'login']);
+Route::post('/login', [AuthenticatedController::class, 'store']);
 
 // Rutas protegidas (requieren autenticación)
 Route::middleware('auth')->group(function () {
@@ -40,7 +40,7 @@ Route::middleware('auth')->group(function () {
     })->name('reportes');
     
     
-    Route::post('/logout', [AuthenticatedController::class, 'destroy'])->name('logout');
+    //Route::post('/logout', [AuthenticatedController::class, 'destroy'])->name('logout');
 });
 
 

@@ -10,7 +10,7 @@ class FormularioController extends Controller
     public function index()
 {
     return Inertia::render('Formulario', [
-        'proyectos' => Proyecto::with('bloques')->get()
+        'proyectos' => Proyecto::all(),
     ]);
 }
 }

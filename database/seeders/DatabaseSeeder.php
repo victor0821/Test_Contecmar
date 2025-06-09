@@ -16,18 +16,18 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // Tabla 3: Proyectos
-    Proyecto::create(['id' => 'BICM', 'nombre' => 'Oceanográfico']);
-    Proyecto::create(['id' => 'BALC', 'nombre' => 'Bloque DA']);
+    //Proyecto::create(['id' => 'BICM', 'nombre' => 'Oceanográfico']);
+    //Proyecto::create(['id' => 'BALC', 'nombre' => 'Bloque DA']);
     // ... otros proyectos
 
     // Tabla 2: Bloques
-    Bloque::create(['id' => '130-1110', 'nombre_bloque' => '1110', 'proyecto_id' => 'BICM']);
-    Bloque::create(['id' => '135-1110', 'nombre_bloque' => '2210', 'proyecto_id' => 'BALC']);
+    //Bloque::create(['id' => '130-1110', 'nombre_bloque' => '1110', 'proyecto_id' => 'BICM']);
+    //Bloque::create(['id' => '135-1110', 'nombre_bloque' => '2210', 'proyecto_id' => 'BALC']);
     // ... otros bloques
 
     // Tabla 1: Usuarios
-    User::create(['name' => 'Luis', 'password' => '0000']);
-    User::create(['name' => 'Gabriel', 'password' => '1111']);
+    User::create(['name' => 'victor', 'password' => 'vic']);
+    //User::create(['name' => 'Gabriel', 'password' => '1111']);
     // ... otros usuarios
     }
 }
